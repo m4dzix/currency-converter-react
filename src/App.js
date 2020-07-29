@@ -2,17 +2,19 @@ import React from 'react';
 import Form from './Form';
 import Header from './Header';
 import Section from './Section';
+import Main from './Main'
+import Wrapper from './Wrapper';
 
 function App() {
   return (
   <div className="div--darkenOverlay">
-    <div className="wrapper">
+   <Wrapper>
     <Header title= "kalkulator walutowy"/>
-      <main className="main">
+      <Main>
        <Form/>
        <Section/>
-      </main>
-    </div>
+      </Main>
+    </Wrapper>
   </div>
   );
 };
