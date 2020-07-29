@@ -1,15 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import  Form from './Form';
-import './App.css';
+import Form from './Form';
+import Header from './Header';
 
 function App() {
   return (
   <div className="div--darkenOverlay">
     <div className="wrapper">
-      <header className="header">
-        <h1 className="header__title">kalkulator walutowy</h1>
-      </header>
+    <Header title= "kalkulator walutowy"/>
       <main className="main">
        <Form/>
         <section className="section">
