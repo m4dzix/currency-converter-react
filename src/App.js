@@ -4,18 +4,22 @@ import Header from './Header';
 import Section from './Section';
 import Main from './Main'
 import Wrapper from './Wrapper';
+import Body from './Body';
+import DarkenOverlay from './DarkenOverlay';
 
 function App() {
   return (
-  <div className="div--darkenOverlay">
-   <Wrapper>
-    <Header title= "kalkulator walutowy"/>
-      <Main>
-       <Form/>
-       <Section/>
-      </Main>
+  <Body>
+  <DarkenOverlay>
+    <Wrapper>
+      <Header title= "kalkulator walutowy"/>
+        <Main>
+          <Form/>
+          <Section/>
+        </Main>
     </Wrapper>
-  </div>
+  </DarkenOverlay>
+  </Body>
   );
 };
 
