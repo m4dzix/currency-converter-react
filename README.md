@@ -6,7 +6,7 @@ Simple currency converter. Allows to check currencies value like PLN, €, £, $
 Second project made during frontend developer cours on [“youcode.pl”](https://youcode.pl).
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-**Live link:** []()
+**Live link:** [ https://m4dzix.github.io/cantor-react/]( https://m4dzix.github.io/cantor-react/)
 
 ## How to use
 
