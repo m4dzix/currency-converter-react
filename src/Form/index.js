@@ -33,11 +33,13 @@ const Form = ({ calculateResult ,result }) => {
         className= "form__select"
         name="currencyHave"
       >
-          <option value="EUR">EUR</option>
-          <option value="PLN">PLN</option>
-          <option value="USD">USD</option>
-          <option value="GBP">GBP</option>
-          <option value="CHF">CHF</option>
+        {currencies.map(currency =>(
+          <option
+            key={currency.shortName}
+            value={currency.shortName}
+          >
+            {currency.shortName}
+          </option>))}
       </select>
       </label></p>
       <p><label>
@@ -50,11 +52,13 @@ const Form = ({ calculateResult ,result }) => {
         className="form__select "
         name="currencyWant"
       >
-          <option value="EUR">EUR</option>
-          <option value="PLN">PLN</option>
-          <option value="USD">USD</option>
-          <option value="GBP">GBP</option>
-          <option value="CHF">CHF</option>
+        {currencies.map(currency =>(
+          <option
+            key={currency.shortName}
+            value={currency.shortName}
+          >
+          {currency.shortName}
+          </option>))}
       </select>
       </label></p>
     <p><label>
@@ -70,7 +74,7 @@ const Form = ({ calculateResult ,result }) => {
     <button className="form__button">przelicz</button>
     <ShowResult result = {result} />
   </fieldset>
-  </form>
+</form>
 
 );
 };
