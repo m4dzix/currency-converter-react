@@ -4,7 +4,6 @@ import Header from './Header';
 import Section from './Section';
 import Main from './Main'
 import Wrapper from './Wrapper';
-import Body from './Body';
 import currencies from "./Form/currencies";
 
 
@@ -29,7 +28,6 @@ function App() {
   };
   
   return (
-  <Body>
     <Wrapper>
       <Header title= "kalkulator walutowy"/>
         <Main>
@@ -40,7 +38,6 @@ function App() {
           <Section/>
         </Main>
     </Wrapper>
-  </Body>
   );
 };
 
