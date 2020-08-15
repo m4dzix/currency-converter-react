@@ -19,13 +19,13 @@ Check currency value:
 5. You can see value of the currency.
 6. If you want to see the website where the exchange rates come from, click on the link: `internetowykantor.pl. The website will be open in the new tab.
 
-## used Technologies:
+## Used Technologies:
 
 - HTML 
 - CSS (grid)
 - Java Script (ES6): Switch Statement
+- React (create-react-app)
 - BEM convention
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
