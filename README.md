@@ -1,3 +1,30 @@
+# Currency Converter
+
+## Live link
+
+Simple currency converter. Allows to check currencies value like PLN, €, £, $ and CHF.
+Second project made during frontend developer cours on [“youcode.pl”](https://youcode.pl).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+**Live link:** []()
+
+## How to use
+
+Check currency value:
+
+1. Choose what currency you want to exchange.
+2. Choose what currency you want to exchange for.
+3. Enter the amount (This is a necessary step).
+4. Click on the button - `PRZELICZ`.
+5. You can see value of the currency.
+6. If you want to see the website where the exchange rates come from, click on the link: `internetowykantor.pl. The website will be open in the new tab.
+
+## used Technologies:
+
+- HTML 
+- CSS (grid)
+- Java Script (ES6): Switch Statement
+- BEM convention
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -37,32 +64,8 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Author:
+Magdalena Checinski - beginner | junior frontend developer
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Contact :
+[madlen.checinski@gmail.com](mailto:madlen.checinski@gmail.com)
