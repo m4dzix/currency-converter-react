@@ -6,7 +6,7 @@ import React from "react";
   <p className="form__result ">
    {result !== undefined && (
     <>
-      {result.sourceAmount.toFixed(2)}&nbsp;{result.currencyHave}&nbsp;=&nbsp;
+      {result.sourceAmount.toFixed(2)}&nbsp;{result.currencyHave}&nbsp;= {""}
       {result.targetAmount.toFixed(2)}&nbsp;{result.currencyWant}&nbsp;
     </>
    )}
