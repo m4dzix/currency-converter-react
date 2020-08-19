@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
+import ShowDate from "./ShowDate"
 import currencies from "./currencies";
 import ShowResult from "./ShowResult";
 
@@ -19,6 +20,7 @@ const Form = ({ calculateResult ,result }) => {
 
   <form className="form" onSubmit={onSubmit}>
   <fieldset className="form__fieldset">
+  <ShowDate/>
     <legend className="form__legend">
       Wymiana waluty
     </legend>
