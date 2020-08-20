@@ -1,0 +1,13 @@
+.form__showDate{
+    font-family: 'Inconsolata', monospace;
+    /* display: block; */
+    font-size: 12px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+@media(max-width: 414px) and (orientation: portrait){
+    .form__showDate{
+        text-align: center;
+    }
+}
