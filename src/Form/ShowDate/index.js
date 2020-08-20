@@ -6,16 +6,18 @@ const ShowDate = () => {
     const [showDate, setShowDate] = useState( new Date().toLocaleString());
 
     useEffect(() => {
-        setInterval(()=>{
-        setShowDate( new Date().toLocaleString(), 1000)
-    })
-   
-});
+        const intervalId = setInterval( () => {
+        setShowDate( showDate => new Date().toLocaleString() )
+    }, 1000);
+
+    return () => {clearInterval(intervalId)
+    };
+    }, []);
 
 return(
 
-<p class = "form__showDate">
- Aktualna godzina i data: {showDate}
+<p className = "form__showDate">
+ Aktualna data i godzina: {showDate}
 </p>
 );
 }
