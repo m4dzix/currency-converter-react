@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/cantor-react/static/css/main.198a0656.chunk.css",
-    "main.js": "/cantor-react/static/js/main.ebc68a02.chunk.js",
-    "main.js.map": "/cantor-react/static/js/main.ebc68a02.chunk.js.map",
+    "main.css": "/cantor-react/static/css/main.579a155f.chunk.css",
+    "main.js": "/cantor-react/static/js/main.675af393.chunk.js",
+    "main.js.map": "/cantor-react/static/js/main.675af393.chunk.js.map",
     "runtime-main.js": "/cantor-react/static/js/runtime-main.61db47e7.js",
     "runtime-main.js.map": "/cantor-react/static/js/runtime-main.61db47e7.js.map",
     "static/js/2.6914f83e.chunk.js": "/cantor-react/static/js/2.6914f83e.chunk.js",
     "static/js/2.6914f83e.chunk.js.map": "/cantor-react/static/js/2.6914f83e.chunk.js.map",
     "index.html": "/cantor-react/index.html",
-    "precache-manifest.f7f3c68f846213b1544f26355a3fde49.js": "/cantor-react/precache-manifest.f7f3c68f846213b1544f26355a3fde49.js",
+    "precache-manifest.31bec7561ec180df77629364511c086a.js": "/cantor-react/precache-manifest.31bec7561ec180df77629364511c086a.js",
     "service-worker.js": "/cantor-react/service-worker.js",
-    "static/css/main.198a0656.chunk.css.map": "/cantor-react/static/css/main.198a0656.chunk.css.map",
+    "static/css/main.579a155f.chunk.css.map": "/cantor-react/static/css/main.579a155f.chunk.css.map",
     "static/js/2.6914f83e.chunk.js.LICENSE.txt": "/cantor-react/static/js/2.6914f83e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.61db47e7.js",
     "static/js/2.6914f83e.chunk.js",
-    "static/css/main.198a0656.chunk.css",
-    "static/js/main.ebc68a02.chunk.js"
+    "static/css/main.579a155f.chunk.css",
+    "static/js/main.675af393.chunk.js"
   ]
 }
