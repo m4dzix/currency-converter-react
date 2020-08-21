@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./style.css";
+import {StyledForm, Paragraph, LabelText, Span, Select,
+   Field, Button, Fieldset, Legend} from "./styled"
 import currencies from "./currencies";
 import ShowResult from "./ShowResult";
 
@@ -17,20 +18,19 @@ const Form = ({ calculateResult ,result }) => {
 
   return( 
 
-  <form className="form" onSubmit={onSubmit}>
-  <fieldset className="form__fieldset">
-    <legend className="form__legend">
+  <StyledForm onSubmit={onSubmit}>
+  <Fieldset>
+    <Legend>
       Wymiana waluty
-    </legend>
-    <p className=" form__paragraph">Pole oznaczone * musi zostać wypełnione</p>
+    </Legend>
+    <Paragraph>Pole oznaczone * musi zostać wypełnione</Paragraph>
     <p><label>
-      <span className="form__labelText">wymiana z: 
-        <span className="form__span">(wybierz walutę)</span>
-      </span>
-      <select
+      <LabelText>wymiana z: 
+        <Span>(wybierz walutę)</Span>
+      </LabelText>
+      <Select
         value={currencyHave}
         onChange = {( {target} ) => setCurrencyHave(target.value)}
-        className= "form__select"
         name="currencyHave"
       >
         {currencies.map(currency =>(
@@ -40,16 +40,15 @@ const Form = ({ calculateResult ,result }) => {
           >
             {currency.shortName}
           </option>))}
-      </select>
+      </Select>
       </label></p>
       <p><label>
-      <span className="form__labelText">wymiana na: 
-        <span className="form__span">(wybierz walutę)</span>
-      </span>
-      <select
+      <LabelText>wymiana na: 
+        <Span>(wybierz walutę)</Span>
+      </LabelText>
+      <Select
         value={currencyWant}
         onChange = {( {target} ) => setCurrencyWant(target.value)}
-        className="form__select "
         name="currencyWant"
       >
         {currencies.map(currency =>(
@@ -59,22 +58,21 @@ const Form = ({ calculateResult ,result }) => {
           >
           {currency.shortName}
           </option>))}
-      </select>
+      </Select>
       </label></p>
     <p><label>
-    <span className="form__labelText">Podaj kwotę*: </span>
-    <input 
+    <LabelText>Podaj kwotę*: </LabelText>
+    <Field
       value={amount}
       onChange={({target})=> setAmount(target.value)}
-      className="form__field"
       name="value" 
       type="number" 
       required step="0.01"/>
     </label></p>
-    <button className="form__button">przelicz</button>
+    <Button>przelicz</Button>
     <ShowResult result = {result} />
-  </fieldset>
-</form>
+  </Fieldset>
+</StyledForm>
 
 );
 };

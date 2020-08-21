@@ -1,18 +1,17 @@
 import React from "react";
-import "./style.css";
+import {Paragraph, Link, Span} from "./styled"
 
 const Section = () => (
-  <section className="section">
-    <p className="section__paragraph">Kursy walut pochodzą ze strony : 
-    <a 
-      className="section__link"
+  <section>
+    <Paragraph>Kursy walut pochodzą ze strony : 
+    <Link
       href="https://internetowykantor.pl/kursy-walut/"
       target="_blank" rel="noreferrer noopener">
       "internetowykantor.pl"
-    </a> 
+    </Link> 
       z dnia 7 lipca 2020
-      <span className="link__span"> (otworzy się w nowej karcie)</span>
-    </p>
+      <Span> (otworzy się w nowej karcie)</Span>
+    </Paragraph>
   </section>
 );
 

@@ -1,12 +1,12 @@
 import React from 'react';
-import './style.css'
+import { StyledMain } from "./styled"
 import ShowDate from "./ShowDate"
 
 const Main = ({children}) => (
-  <main className="main">
-     <ShowDate/>
+  <StyledMain>
+    <ShowDate/>
     {children}
-  </main>
+  </StyledMain>
 )
 
 export default Main

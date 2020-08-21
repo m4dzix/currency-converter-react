@@ -1,16 +1,17 @@
 import React from "react";
-
+import { Paragraph} from "./styled"
+ 
 
  const ShowResult = ({result}) => (
 
-  <p className="form__result ">
+  <Paragraph>
    {result !== undefined && (
     <>
       {result.sourceAmount.toFixed(2)}&nbsp;{result.currencyHave}&nbsp;= {""}
       {result.targetAmount.toFixed(2)}&nbsp;{result.currencyWant}&nbsp;
     </>
    )}
-  </p>
+  </Paragraph>
  );
 
  export default ShowResult;

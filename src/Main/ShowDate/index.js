@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import './style.css';
+import { StyledDate } from "./styled"
+
 
 const formatDate = (showDate) => 
     showDate.toLocaleString(undefined, {
@@ -27,9 +28,9 @@ const ShowDate = () => {
 
 return(
 
-<p className = "form__showDate">
+<StyledDate>
  Aktualna data i godzina:{formatDate(showDate)}
-</p>
+</StyledDate>
 );
 }
 
