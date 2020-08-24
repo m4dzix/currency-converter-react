@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cantor-react/precache-manifest.300d43ed71c6210d42f374f9dde71ec8.js"
+  "/cantor-react/precache-manifest.9fd1bc53811192860999260048ffe4a5.js"
 );
 
 self.addEventListener('message', (event) => {
