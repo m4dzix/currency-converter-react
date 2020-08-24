@@ -1,16 +1,16 @@
 import React from "react";
-import {useClock} from "../useClock";
+import {useCurrentDate} from "../useCurrentDate";
 import { StyledDate } from "./styled";
 
 
 const ShowDate = () => {
 
-    const clock = useClock();
+    const clock = useCurrentDate();
 
 return (
 
     <StyledDate>
-    Aktualna data i godzina:{clock}
+        Aktualna data i godzina:{" "}{clock}
     </StyledDate>
     );
     };

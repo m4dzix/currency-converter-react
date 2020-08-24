@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export const useClock = () => {
+export const useCurrentDate = () => {
     
     const formatDate = () => 
     new Date().toLocaleString(undefined, {
