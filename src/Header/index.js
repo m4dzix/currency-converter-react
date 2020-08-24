@@ -1,7 +1,7 @@
 import React from "react";
-import {Title} from "./styled";
+import { Title } from "./styled";
 
-const Header = ({title}) => (
+const Header = ({ title }) => (
   <header className="header">
     <Title>{title}</Title>
   </header>
