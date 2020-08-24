@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "36a56e78f24c6ce5318772420a5938e1",
+    "revision": "9d2dc0a09174b5293132cb55cc953ae4",
     "url": "/cantor-react/index.html"
   },
   {
-    "revision": "7bbdae1b1bd559674823",
+    "revision": "2f956b849f37ab28172d",
     "url": "/cantor-react/static/css/main.54a73d78.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cantor-react/static/js/2.e95cc497.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7bbdae1b1bd559674823",
-    "url": "/cantor-react/static/js/main.b6b38324.chunk.js"
+    "revision": "2f956b849f37ab28172d",
+    "url": "/cantor-react/static/js/main.b4c8e002.chunk.js"
   },
   {
     "revision": "b975c067eb63bcfd848a",
