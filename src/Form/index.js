@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {StyledForm, Paragraph, LabelText, Span, Select,
-   Field, Button, Fieldset, Legend} from "./styled"
+   Field, Button, Fieldset, Legend} from "./styled";
 import currencies from "./currencies";
 import ShowResult from "./ShowResult";
 
