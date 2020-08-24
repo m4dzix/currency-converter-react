@@ -1,5 +1,5 @@
 import React from 'react';
-import{Wrap} from "./styled"
+import{Wrap} from "./styled";
 
 const Wrapper = ({children}) => (
   <Wrap>

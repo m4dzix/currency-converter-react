@@ -1,5 +1,5 @@
 import React from "react";
-import {Paragraph, Link, Span} from "./styled"
+import {Paragraph, Link, Span} from "./styled";
 
 const Section = () => (
   <section>
