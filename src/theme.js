@@ -8,6 +8,7 @@ export const theme = {
     black: "#000000",
     eperor: "#555555",
     boulder: "#777777",
+    gray: "#888888",
   },
 
   breakpoint: {

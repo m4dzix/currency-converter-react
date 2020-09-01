@@ -23,19 +23,19 @@ export const Span = styled.span`
 export const Select = styled.select`
   padding: 5px;
   border-radius: 10px;
-  border: solid 2px #888;
+  border: solid 2px ${({ theme }) => theme.color.gray};
 `;
 export const Field = styled.input`
   padding: 5px;
   border-radius: 10px;
-  border: solid 3px #888;
+  border: solid 3px ${({ theme }) => theme.color.gray};
 `;
 export const Button = styled.button`
   display: inline-block;
   background-color: ${({ theme }) => theme.color.tacha};
   text-transform: uppercase;
   padding: 10px;
-  border: solid 3px black;
+  border: solid 3px ${({ theme }) => theme.color.black};
   border-radius: 10px;
   margin-top: 20px;
 
@@ -49,7 +49,7 @@ export const Button = styled.button`
   }
 `;
 export const Fieldset = styled.fieldset`
-  border: solid 4px black;
+  border: solid 4px ${({ theme }) => theme.color.black};
   background-color: peachpuff;
   border-radius: 10px;
 `;
@@ -57,6 +57,6 @@ export const Legend = styled.legend`
   font-size: 30px;
   background-color: ${({ theme }) => theme.color.tacha};
   padding: 5px 15px;
-  border: solid 4px black;
+  border: solid 4px ${({ theme }) => theme.color.black};
   border-radius: 10px;
 `;
