@@ -7,9 +7,9 @@ export const StyledDate = styled.p`
   padding: 10px;
   margin: 10px;
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0.507);
+  background-color: ${({ theme }) => theme.color.brighterBlack};
 
-  @media (max-width: 414px) and (orientation: portrait) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     text-align: center;
   }
 `;

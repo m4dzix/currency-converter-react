@@ -16,10 +16,10 @@ export const Link = styled.a`
 
   &:hover {
     cursor: pointer;
-    color: #555;
+    color: ${({ theme }) => theme.color.eperor};
   }
   &:active {
-    color: #777;
+    color: ${({ theme }) => theme.color.boulder};
   }
 `;
 

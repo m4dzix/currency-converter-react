@@ -8,7 +8,7 @@ export const StyledForm = styled.form`
 `;
 export const Paragraph = styled.p`
   font-size: 15px;
-  color: #444;
+  color: ${({ theme }) => theme.color.tundora};
 `;
 export const LabelText = styled.span`
   display: inline-block;
@@ -18,7 +18,7 @@ export const LabelText = styled.span`
 `;
 export const Span = styled.span`
   font-size: 10px;
-  color: #555;
+  color: ${({ theme }) => theme.color.tundora};
 `;
 export const Select = styled.select`
   padding: 5px;
@@ -32,7 +32,7 @@ export const Field = styled.input`
 `;
 export const Button = styled.button`
   display: inline-block;
-  background-color: hsl(41, 56%, 62%);
+  background-color: ${({ theme }) => theme.color.frangipani};
   text-transform: uppercase;
   padding: 10px;
   border: solid 3px black;
@@ -41,11 +41,11 @@ export const Button = styled.button`
 
   &:hover {
     cursor: pointer;
-    background-color: hsl(41, 56%, 65%);
+    filter: brightness(110%);
   }
 
   &:active {
-    background-color: hsl(41, 56%, 70%);
+    filter: brightness(115%);
   }
 `;
 export const Fieldset = styled.fieldset`
@@ -55,7 +55,7 @@ export const Fieldset = styled.fieldset`
 `;
 export const Legend = styled.legend`
   font-size: 30px;
-  background-color: hsl(41, 56%, 62%);
+  background-color: ${({ theme }) => theme.color.tacha};
   padding: 5px 15px;
   border: solid 4px black;
   border-radius: 10px;
