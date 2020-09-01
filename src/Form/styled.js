@@ -32,7 +32,7 @@ export const Field = styled.input`
 `;
 export const Button = styled.button`
   display: inline-block;
-  background-color: ${({ theme }) => theme.color.frangipani};
+  background-color: ${({ theme }) => theme.color.tacha};
   text-transform: uppercase;
   padding: 10px;
   border: solid 3px black;
@@ -45,7 +45,7 @@ export const Button = styled.button`
   }
 
   &:active {
-    filter: brightness(115%);
+    filter: brightness(120%);
   }
 `;
 export const Fieldset = styled.fieldset`
