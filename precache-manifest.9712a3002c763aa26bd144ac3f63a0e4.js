@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3d08fa2d0ef00b161651bc4693918464",
+    "revision": "8dab5aaa3c91575152bf33a883a0748f",
     "url": "/cantor-react/index.html"
   },
   {
-    "revision": "930a7d1a511efb0d66d5",
+    "revision": "a13e57b40352337ca82c",
     "url": "/cantor-react/static/css/main.54a73d78.chunk.css"
   },
   {
-    "revision": "059e6d9634d9a60fafd4",
-    "url": "/cantor-react/static/js/2.e95cc497.chunk.js"
+    "revision": "3be168912948f48cfd18",
+    "url": "/cantor-react/static/js/2.7f97f7f7.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/cantor-react/static/js/2.e95cc497.chunk.js.LICENSE.txt"
+    "url": "/cantor-react/static/js/2.7f97f7f7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "930a7d1a511efb0d66d5",
-    "url": "/cantor-react/static/js/main.68559263.chunk.js"
+    "revision": "a13e57b40352337ca82c",
+    "url": "/cantor-react/static/js/main.ca80e5d1.chunk.js"
   },
   {
     "revision": "b975c067eb63bcfd848a",
