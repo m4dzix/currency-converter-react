@@ -60,3 +60,9 @@ export const Legend = styled.legend`
   border: solid 4px ${({ theme }) => theme.color.black};
   border-radius: 10px;
 `;
+export const Information = styled.div`
+  font-size: 20px;
+  margin: 50px;
+  text-align: center;
+  align-self: center;
+`;
