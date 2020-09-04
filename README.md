@@ -1,12 +1,11 @@
 # Currency Converter
 
-## Live link
-
-Simple currency converter. Allows to check currencies value like PLN, €, £, $ and CHF.
+Simple currency converter. Allows to check currencies value like PLN, €, £, \$ and CHF.
 Second project made during frontend developer cours on [“youcode.pl”](https://youcode.pl).
+To created this project I used exchange rates API from [http://exchangeratesapi.io/](http://exchangeratesapi.io/)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-**Live link:** [ https://m4dzix.github.io/cantor-react/]( https://m4dzix.github.io/cantor-react/)
+**Live link:** [ https://m4dzix.github.io/cantor-react/](https://m4dzix.github.io/cantor-react/)
 
 ## How to use
 
@@ -17,15 +16,16 @@ Check currency value:
 3. Enter the amount (This is a necessary step).
 4. Click on the button - `PRZELICZ`.
 5. You can see value of the currency.
-6. If you want to see the website where the exchange rates come from, click on the link: `internetowykantor.pl. The website will be open in the new tab.
+6. If you want to see the website where the exchange rates come from, click on the link: `exchangeratesapi.io`. The website will be open in the new tab.
 
 ## Used Technologies:
 
-- HTML 
+- HTML
 - CSS (grid)
 - Java Script (ES6): Switch Statement
 - React (create-react-app)
 - BEM convention
+- API
 
 ## Available Scripts
 
@@ -65,7 +65,9 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Author:
+
 Magdalena Checinski - beginner | junior frontend developer
 
 ## Contact :
+
 [madlen.checinski@gmail.com](mailto:madlen.checinski@gmail.com)
