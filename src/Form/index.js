@@ -14,12 +14,23 @@ import {
 import ShowResult from "./ShowResult";
 import { useRates } from "../useRates";
 
-const Form = ({ calculateResult, result }) => {
+const Form = () => {
   const { rates } = useRates();
   const currencyApiArray = Object.keys(useRates().rates);
   const [amount, setAmount] = useState("");
-  const [currencyHave, setCurrencyHave] = useState(currencyApiArray[1]);
+  const [currencyHave, setCurrencyHave] = useState(currencyApiArray[0]);
   const [currencyWant, setCurrencyWant] = useState(currencyApiArray[1]);
+
+  const [result, setResult] = useState();
+
+  const calculateResult = (currencyHave, currencyWant, amount) => {
+    setResult({
+      sourceAmount: +amount,
+      currencyHave,
+      targetAmount: (amount * rates[currencyWant]) / rates[currencyHave],
+      currencyWant,
+    });
+  };
 
   const onSubmit = (event) => {
     event.preventDefault();
@@ -38,7 +49,7 @@ const Form = ({ calculateResult, result }) => {
               <label>
                 <LabelText>
                   wymiana z:
-                  <Span>(wybierz walutę)</Span>
+                  <Span> (wybierz walutę)</Span>
                 </LabelText>
                 <Select
                   value={currencyHave}
