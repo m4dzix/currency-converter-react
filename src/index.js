@@ -5,10 +5,12 @@ import { theme } from "./theme";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import { GlobalStyle } from "./GlobalStyle";
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
+      <GlobalStyle />
       <App />
     </ThemeProvider>
   </React.StrictMode>,
