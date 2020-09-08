@@ -18,8 +18,8 @@ const Form = () => {
   const { rates } = useRates();
   const currencyApiArray = Object.keys(useRates().rates);
   const [amount, setAmount] = useState("");
-  const [currencyHave, setCurrencyHave] = useState(currencyApiArray[0]);
-  const [currencyWant, setCurrencyWant] = useState(currencyApiArray[1]);
+  const [currencyHave, setCurrencyHave] = useState("PLN");
+  const [currencyWant, setCurrencyWant] = useState("EUR");
 
   const [result, setResult] = useState();
 
