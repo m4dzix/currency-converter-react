@@ -25,11 +25,6 @@ export const Select = styled.select`
   border-radius: 10px;
   border: solid 2px ${({ theme }) => theme.color.gray};
 `;
-export const Field = styled.input`
-  padding: 5px;
-  border-radius: 10px;
-  border: solid 3px ${({ theme }) => theme.color.gray};
-`;
 export const Button = styled.button`
   display: inline-block;
   background-color: ${({ theme }) => theme.color.tacha};

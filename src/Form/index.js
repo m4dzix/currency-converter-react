@@ -5,7 +5,6 @@ import {
   LabelText,
   Span,
   Select,
-  Field,
   Button,
   Fieldset,
   Legend,
@@ -86,14 +85,15 @@ const Form = () => {
             <p>
               <label>
                 <LabelText>Podaj kwotę*: </LabelText>
-                <Field
+                <Select
+                  as="input"
                   value={amount}
                   onChange={({ target }) => setAmount(target.value)}
                   name="value"
                   type="number"
                   required
                   step="0.01"
-                />
+                ></Select>
               </label>
             </p>
             <Button>przelicz</Button>
@@ -102,7 +102,7 @@ const Form = () => {
         ) : (
           <Information>
             {rates === "error"
-              ? "Przepraszamy wystapił błąd, chyba masz problem z internetem, jeśli nie - spróbój później"
+              ? "Ojojoj... wygląda na to, że wystapił błąd, chyba masz problem z internetem, jeśli nie - spróbuj później"
               : "Poczekaj chwilkę, ładujemy teraz dane z Europejskiego Banku Centralnego "}
           </Information>
         )}
