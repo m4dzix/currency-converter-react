@@ -23,7 +23,7 @@ Check currency value:
 - HTML
 - CSS (grid)
 - Java Script (ES6): Switch Statement
-- React (create-react-app)
+- React (create-react-app, custom hooks, styled components)
 - BEM convention
 - API
 
