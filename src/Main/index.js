@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
+import { StyledMain } from "./styled";
+import ShowDate from "./ShowDate";
 
-const Main = ({children}) => (
-  <main className="main">
+const Main = ({ children }) => (
+  <StyledMain>
+    <ShowDate />
     {children}
-  </main>
-)
+  </StyledMain>
+);
 
-export default Main
+export default Main;

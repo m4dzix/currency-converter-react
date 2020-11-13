@@ -1,4 +1,6 @@
-.header__title {
+import styled from "styled-components";
+
+export const Title = styled.h1`
   margin: 10px;
   margin-bottom: 80px;
   padding: 20px 0;
@@ -6,6 +8,6 @@
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 3px;
-  background-color: hsl(41, 50%, 45%);
+  background-color: ${({ theme }) => theme.color.luxorGold};
   border-radius: 10px;
-}
+`;

@@ -1,12 +1,35 @@
 import React, { useState } from "react";
-import "./style.css";
-import currencies from "./currencies";
+import {
+  StyledForm,
+  Paragraph,
+  LabelText,
+  Span,
+  Select,
+  Button,
+  Fieldset,
+  Legend,
+  Information,
+} from "./styled";
 import ShowResult from "./ShowResult";
+import { useRates } from "../useRates";
 
-const Form = ({ calculateResult, result }) => {
+const Form = () => {
+  const { rates } = useRates();
+  const currencyApiArray = Object.keys(useRates().rates);
+  const [amount, setAmount] = useState("");
   const [currencyHave, setCurrencyHave] = useState("PLN");
   const [currencyWant, setCurrencyWant] = useState("EUR");
-  const [amount, setAmount] = useState("");
+
+  const [result, setResult] = useState();
+
+  const calculateResult = (currencyHave, currencyWant, amount) => {
+    setResult({
+      sourceAmount: +amount,
+      currencyHave,
+      targetAmount: (amount * rates[currencyWant]) / rates[currencyHave],
+      currencyWant,
+    });
+  };
 
   const onSubmit = (event) => {
     event.preventDefault();
@@ -14,70 +37,77 @@ const Form = ({ calculateResult, result }) => {
   };
 
   return (
-    <form className="form" onSubmit={onSubmit}>
-      <fieldset className="form__fieldset">
-        <legend className="form__legend">Wymiana waluty</legend>
-        <p className=" form__paragraph">
-          Pole oznaczone * musi zostać wypełnione
-        </p>
-        <p>
-          <label>
-            <span className="form__labelText">
-              wymiana z:
-              <span className="form__span">(wybierz walutę)</span>
-            </span>
-            <select
-              value={currencyHave}
-              onChange={({ target }) => setCurrencyHave(target.value)}
-              className="form__select"
-              name="currencyHave"
-            >
-              {currencies.map((currency) => (
-                <option key={currency.shortName} value={currency.shortName}>
-                  {currency.shortName}
-                </option>
-              ))}
-            </select>
-          </label>
-        </p>
-        <p>
-          <label>
-            <span className="form__labelText">
-              wymiana na:
-              <span className="form__span">(wybierz walutę)</span>
-            </span>
-            <select
-              value={currencyWant}
-              onChange={({ target }) => setCurrencyWant(target.value)}
-              className="form__select "
-              name="currencyWant"
-            >
-              {currencies.map((currency) => (
-                <option key={currency.shortName} value={currency.shortName}>
-                  {currency.shortName}
-                </option>
-              ))}
-            </select>
-          </label>
-        </p>
-        <p>
-          <label>
-            <span className="form__labelText">Podaj kwotę*: </span>
-            <input
-              value={amount}
-              onChange={({ target }) => setAmount(target.value)}
-              className="form__field"
-              name="value"
-              type="number"
-              required
-              step="0.01"
-            />
-          </label>
-        </p>
-        <button className="form__button">przelicz</button>
-        <ShowResult result={result} />
-      </fieldset>
-    </form>
+    <StyledForm onSubmit={onSubmit}>
+      <Fieldset>
+        <Legend>Wymiana waluty</Legend>
+
+        {rates ? (
+          <>
+            <Paragraph>Pole oznaczone * musi zostać wypełnione</Paragraph>
+            <p>
+              <label>
+                <LabelText>
+                  wymiana z:
+                  <Span> (wybierz walutę)</Span>
+                </LabelText>
+                <Select
+                  value={currencyHave}
+                  onChange={({ target }) => setCurrencyHave(target.value)}
+                  name="currencyHave"
+                >
+                  {currencyApiArray.map((currencyApiArray) => (
+                    <option key={currencyApiArray} value={currencyApiArray}>
+                      {currencyApiArray}
+                    </option>
+                  ))}
+                </Select>
+              </label>
+            </p>
+            <p>
+              <label>
+                <LabelText>
+                  wymiana na:
+                  <Span>(wybierz walutę)</Span>
+                </LabelText>
+                <Select
+                  value={currencyWant}
+                  onChange={({ target }) => setCurrencyWant(target.value)}
+                  name="currencyWant"
+                >
+                  {currencyApiArray.map((currencyApiArray) => (
+                    <option key={currencyApiArray} value={currencyApiArray}>
+                      {currencyApiArray}
+                    </option>
+                  ))}
+                </Select>
+              </label>
+            </p>
+            <p>
+              <label>
+                <LabelText>Podaj kwotę*: </LabelText>
+                <Select
+                  as="input"
+                  value={amount}
+                  onChange={({ target }) => setAmount(target.value)}
+                  name="value"
+                  type="number"
+                  required
+                  step="0.01"
+                ></Select>
+              </label>
+            </p>
+            <Button>przelicz</Button>
+            <ShowResult result={result} />
+          </>
+        ) : (
+          <Information>
+            {rates === "error"
+              ? "Ojojoj... wygląda na to, że wystapił błąd, chyba masz problem z internetem, jeśli nie - spróbuj później"
+              : "Poczekaj chwilkę, ładujemy teraz dane z Europejskiego Banku Centralnego "}
+          </Information>
+        )}
+      </Fieldset>
+    </StyledForm>
   );
 };
 
