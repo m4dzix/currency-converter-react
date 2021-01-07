@@ -5,7 +5,9 @@ Second project made during frontend developer cours on [“youcode.pl”](https:
 To created this project I used exchange rates API from [http://exchangeratesapi.io/](http://exchangeratesapi.io/)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-**Live link:** [ https://m4dzix.github.io/cantor-react/](https://m4dzix.github.io/cantor-react/)
+**Live link:** [ https://m4dzix.github.io/
+currency-conventer-react/](https://m4dzix.github.io/
+currency-conventer-react/)
 
 ## How to use
 
