@@ -6,8 +6,8 @@ To created this project I used exchange rates API from [http://exchangeratesapi.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 **Live link:** [ https://m4dzix.github.io/
-currency-conventer-react/](https://m4dzix.github.io/
-currency-conventer-react/)
+currency-converter-react/](https://m4dzix.github.io/
+currency-converter-react/)
 
 ## How to use
 
