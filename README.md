@@ -5,9 +5,7 @@ Second project made during frontend developer cours on [“youcode.pl”](https:
 To created this project I used exchange rates API from [http://exchangeratesapi.io/](http://exchangeratesapi.io/)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-**Live link:** [ https://m4dzix.github.io/
-currency-converter-react/](https://m4dzix.github.io/
-currency-converter-react/)
+**Live link:** [https://m4dzix.github.io/cantor-react/](https://m4dzix.github.io/cantor-react/)
 
 ## How to use
 
@@ -19,6 +17,8 @@ Check currency value:
 4. Click on the button - `PRZELICZ`.
 5. You can see value of the currency.
 6. If you want to see the website where the exchange rates come from, click on the link: `exchangeratesapi.io`. The website will be open in the new tab.
+
+![howToUseGif](src/currencyActions.gif)
 
 ## Used Technologies:
 
