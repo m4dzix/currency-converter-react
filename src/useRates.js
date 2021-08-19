@@ -8,7 +8,8 @@ export const useRates = () => {
 
   useEffect(() => {
     const getApi = () => {
-      const currenciesAPI = "https://api.exchangeratesapi.io/latest?base=PLN";
+      const currenciesAPI =
+        "http://api.exchangeratesapi.io/v1/latest?access_key=c0374f958fe4c9766ba330c60d02c1af";
 
       fetch(currenciesAPI)
         .then((response) => {
