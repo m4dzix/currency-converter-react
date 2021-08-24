@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/cantor-react/static/js/main.93f6cfca.chunk.js",
-    "main.js.map": "/cantor-react/static/js/main.93f6cfca.chunk.js.map",
-    "runtime-main.js": "/cantor-react/static/js/runtime-main.61db47e7.js",
-    "runtime-main.js.map": "/cantor-react/static/js/runtime-main.61db47e7.js.map",
-    "static/js/2.4968c73e.chunk.js": "/cantor-react/static/js/2.4968c73e.chunk.js",
-    "static/js/2.4968c73e.chunk.js.map": "/cantor-react/static/js/2.4968c73e.chunk.js.map",
-    "index.html": "/cantor-react/index.html",
-    "precache-manifest.ffa2f8297ea0d4eefa94376a8141587f.js": "/cantor-react/precache-manifest.ffa2f8297ea0d4eefa94376a8141587f.js",
-    "service-worker.js": "/cantor-react/service-worker.js",
-    "static/js/2.4968c73e.chunk.js.LICENSE.txt": "/cantor-react/static/js/2.4968c73e.chunk.js.LICENSE.txt"
+    "main.js": "/currency-converter-react/static/js/main.37d8a743.chunk.js",
+    "main.js.map": "/currency-converter-react/static/js/main.37d8a743.chunk.js.map",
+    "runtime-main.js": "/currency-converter-react/static/js/runtime-main.2415008a.js",
+    "runtime-main.js.map": "/currency-converter-react/static/js/runtime-main.2415008a.js.map",
+    "static/js/2.129238a0.chunk.js": "/currency-converter-react/static/js/2.129238a0.chunk.js",
+    "static/js/2.129238a0.chunk.js.map": "/currency-converter-react/static/js/2.129238a0.chunk.js.map",
+    "index.html": "/currency-converter-react/index.html",
+    "precache-manifest.70fb38717e9b4021a41d1dd9b1878960.js": "/currency-converter-react/precache-manifest.70fb38717e9b4021a41d1dd9b1878960.js",
+    "service-worker.js": "/currency-converter-react/service-worker.js",
+    "static/js/2.129238a0.chunk.js.LICENSE.txt": "/currency-converter-react/static/js/2.129238a0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.61db47e7.js",
-    "static/js/2.4968c73e.chunk.js",
-    "static/js/main.93f6cfca.chunk.js"
+    "static/js/runtime-main.2415008a.js",
+    "static/js/2.129238a0.chunk.js",
+    "static/js/main.37d8a743.chunk.js"
   ]
 }
