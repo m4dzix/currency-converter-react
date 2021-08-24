@@ -1,8 +1,8 @@
 # Currency Converter
 
-Simple currency converter. Allows to check currencies value like PLN, €, £, \$ and CHF.
+Simple currency converter. Allows check the value of different currencies.
 Second project made during frontend developer cours on [“youcode.pl”](https://youcode.pl).
-To created this project I used exchange rates API from [http://exchangeratesapi.io/](http://exchangeratesapi.io/)
+To created this project I used API from [http://exchangeratesapi.io/](http://exchangeratesapi.io/)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 **Live link:** [https://m4dzix.github.io/cantor-react/](https://m4dzix.github.io/cantor-react/)
@@ -23,11 +23,11 @@ Check currency value:
 ## Used Technologies:
 
 - HTML
-- CSS (grid)
-- Java Script (ES6): Switch Statement
-- React (create-react-app, custom hooks, styled components)
-- BEM convention
-- API
+- React 
+- Styled components
+- Create-react-app
+- Custom hooks
+- Fetching API
 
 ## Available Scripts
 
