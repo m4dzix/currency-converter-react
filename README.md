@@ -1,5 +1,7 @@
 # Currency Converter
 
+### INFO: Currently converter is not working on `live` version because GitHubPages is blocking non-https sources.
+
 Simple currency converter. Allows check the value of different currencies.
 Second project made during frontend developer cours on [“youcode.pl”](https://youcode.pl).
 To created this project I used API from [http://exchangeratesapi.io/](http://exchangeratesapi.io/)
