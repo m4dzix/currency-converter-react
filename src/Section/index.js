@@ -6,17 +6,17 @@ const Section = () => {
   return (
     <section>
       <Paragraph>
-        Kursy walut pochodzą ze strony :
+        Kursy walut pochodzą ze strony:
         <Link
-          href="http://exchangeratesapi.io/"
+          href="https://exchangerate.host/#/"
           target="_blank"
           rel="noreferrer noopener"
         >
           {" "}
-          "exchangeratesapi.io"
-        </Link>{" "}
-        <Span> (otworzy się w nowej karcie)</Span> ; są publikowane przez
-        Europejski Bank Centralny z dnia: &nbsp;{useRates().date}
+          exchangerate.host
+        </Link>
+        . Są publikowane przez Europejski Bank Centralny z dnia: &nbsp;
+        {useRates().date}
       </Paragraph>
     </section>
   );

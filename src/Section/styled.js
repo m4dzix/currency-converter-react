@@ -13,7 +13,8 @@ export const Paragraph = styled.p`
 export const Link = styled.a`
   text-decoration: none;
   color: ${({ theme }) => theme.color.black};
-
+  font-weight: bold;
+  font-style: italic;
   &:hover {
     cursor: pointer;
     color: ${({ theme }) => theme.color.eperor};
