@@ -1,10 +1,8 @@
 # Currency Converter
 
-### INFO: Currently converter is not working on `live` version because GitHubPages is blocking non-https sources.
-
 Simple currency converter. Allows check the value of different currencies.
 Second project made during frontend developer cours on [“youcode.pl”](https://youcode.pl).
-To created this project I used API from [http://exchangeratesapi.io/](http://exchangeratesapi.io/)
+To created this project I used API from [exchangerate.host](https://exchangerate.host/#/)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 **Live link:** [https://m4dzix.github.io/cantor-react/](https://m4dzix.github.io/cantor-react/)
@@ -18,7 +16,7 @@ Check currency value:
 3. Enter the amount (This is a necessary step).
 4. Click on the button - `PRZELICZ`.
 5. You can see value of the currency.
-6. If you want to see the website where the exchange rates come from, click on the link: `exchangeratesapi.io`. The website will be open in the new tab.
+6. If you want to see the website where the exchange rates come from, click on the link: `exchangerate.host`. The website will be open in the new tab.
 
 ![howToUseGif](src/currencyActions.gif)
 
