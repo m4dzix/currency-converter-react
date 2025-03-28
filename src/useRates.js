@@ -9,7 +9,7 @@ export const useRates = () => {
   useEffect(() => {
     const getApi = () => {
       const currenciesAPI =
-        "http://api.exchangeratesapi.io/v1/latest?access_key=9d3f5adaee6e9458ce63aab170cfd3c6";
+        "https://api.exchangeratesapi.io/v1/latest?access_key=9d3f5adaee6e9458ce63aab170cfd3c6";
 
       fetch(currenciesAPI)
         .then((response) => {
